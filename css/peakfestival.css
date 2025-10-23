@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'MarinBold';
+    src: url(../TTF/MarinBold.ttf);
+}
+
+@font-face {
+    font-family: 'MarinRegular';
+    src: url(../TTF/MarinRegular.ttf);
+}
+body{font-family: 'Marin';}
+/* basic style */
+* {
+    margin: 0;
+    padding: 0;
+    color: #eeeeee;
+}
+
+ul {
+    list-style: none;
+}
+
+ul>li {float: left;}
+
+/*  로고사이즈, 컨텐츠 제목 */
+h1 {
+    font-size: 32px;
+    font-family: 'MarinBold';
+}
+
+h2{
+    font-size: 28px;
+    font-family: 'MarinBold';
+}
+h3 {
+    font-size: 20px;
+    font-family: 'MarinBold';
+}
+
+p,a,td,th {
+    font-family: 'MarinRegular';
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* layout style */
+#wrap {
+    background: #0b0b0b;
+}
+
+#header {
+    width: 1400px;
+    margin:0 auto;
+    overflow:hidden;
+    position: relative;
+}
+
+.logo,
+.footerLogo{float:left;}
+.logo{margin-top:95px;}
+.gnb{
+    position:absolute;
+    top: 105px;
+    right:0;
+}
+
+/* 네비게이션 스타일 */
+.nav {
+    width: 676px;
+    height: 45px;
+    margin: 105px auto;
+
+}
+
+.nav > li {
+    float: left;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav > li > a {
+    display: block;
+    padding: 0 40px;
+    font-family: 'MarinBold';
+    line-height: 20px;
+}
+
+.nav > li:hover > a {
+    color: #ff6633;
+}
+
+/* 서브메뉴 스타일 */
+.nav .subMenu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 450px;
+    padding: 0 10px;
+}
+
+/* 서브메뉴 항목 */
+.nav .subMenu > li {
+    float: left;
+}
+
+.nav .subMenu > li > a {
+    font-family: 'MarinBold';
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nav > li:hover .subMenu {
+    display: block;
+}
+
+.nav > li:nth-child(3):hover .subMenu, .nav > li:last-child:hover .subMenu{
+    left: -120px !important;
+}
+
+
+.gnb>.login {
+    padding-right: 40px;
+}
+
+
+/* search style */
+#header form {
+    background: url(../image/icon/search\ line.png) no-repeat 0 0;
+    margin: 0 auto;
+    width: 730px;
+    height: 60px;
+    position: relative;
+}
+
+#header label {
+    display: none;
+}
+
+#header input[type=search] {
+    width: 600px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 50px;
+    margin-top: 17px;
+    color: #eeeeee;
+
+}
+
+#header input[type=image] {
+    background: url(image/icon/검색\ 아이콘_w.png);
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+
+
+/* footer style*/
+#footer1 {
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid #eeeeee;
+}
+
+#footer2 {
+    width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 80px;
+}
+
+#footer3 {
+    background: url(../image/icon/footer-line.png) repeat-x 0 0;
+    height: 84px;
+}
+
+.footerLogo {
+    float: left;
+}
+
+.slogan {
+    float: left;
+    margin-left: 170px;
+}
+
+.info {
+    float: right;
+}
+
+/* 공통 끝 */
+
+/* contents top */
+#contents{
+    margin-top: 100px;
+}
+#contentsTop {
+    width: 1400px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0 150px;
+}
+.title{
+    margin: 0 0 0 90px;
+    border-radius:20px 20px 20px 20px;
+    border: 1px solid #fff;
+    background:#717171B3;
+    width: 700px;
+    height: 370px;
+    padding: 30px 0 30px 180px;
+}
+h2{
+    text-indent: 50px;
+    margin-bottom: 20px;
+}    
+.title>table{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.title table th{
+    display:none;
+}
+.title table td{
+    line-height: 30px;
+    padding: 0 10px
+}
+/* contents middle */
+#contentsMiddle,
+#contentsBottom{
+    width:1400px;
+    margin: 110px auto;
+}
+#contentsMiddle h3,
+#contentsBottom h3{
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #eeeeee;
+    font-family: 'MarinBold';
+    font-size: 20px;
+}
+#contentsMiddle p{
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* contents bottom */
+
+#contentsBottom .p1{
+    font-size: 20px;
+    font-family: 'MarinBold';
+    margin: 50px 0 20px 0;
+}
+#contentsBottom .p2{
+    font-size: 14px;
+    font-family: 'MarinRegular';
+    
+}
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.feedback form {
+    display: flex;
+    gap: 20px;
+}    
+
+#contentsBottom .btn1,
+#contentsBottom .btn2 {
+    background: #d7d4ca;
+    border-radius: 10px;
+    height: 70px;
+    width: 170px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'MarinRegular';
+    border: none;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn1 img, .btn2 img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.formsection{
+    margin: 50px 0 20px 0;
+}
+
+#contentsBottom label{display:none;}
+
+textarea{
+    resize:none;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-family:'MarinRegular';
+    font-size: 14px;
+    padding: 10px;
+    height: 300px;
+    width: 98%;
+}
+.buttonSection{
+    display:flex;
+    justify-content: flex-end;
+}
+#contentsBottom .btn3,
+#contentsBottom .btn4 {
+    border-radius: 10px;
+    height: 55px;
+    width: 120px;
+    font-size: 16px;
+    font-family: 'MarinRegular';
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+#contentsBottom .btn3{
+    background:url("../image/icon/camera.png")no-repeat 15px 10px; 
+    background-size: 40px;
+    background-color:#fff;
+    color:#000;
+    text-indent: 30px;
+    margin-right: 10px;
+}
+#contentsBottom .btn4{
+    background:#312a2a;
+    color:#fff;
+    margin-left:10px;
+}

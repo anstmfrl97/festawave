@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="../css/Mainmaster.css">
+</head>
+
+<body id="wrap">
+    <div id="headerBack">
+        <div id="header">
+            <h1 class="logo"><a href="main.html"><img src="../image/icon/festawave.png" alt="페스타웨이브 로고"></a></h1>
+            <ul class="nav">
+                <li><a href="theme.html">THEME</a>
+                    <ul class="subMenu">
+                        <li><a href="theme.html">문화예술</a></li>
+                        <li><a href="theme.html">푸드</a></li>
+                        <li><a href="theme.html">자연</a></li>
+                    </ul>
+                </li>
+                <li><a href="season.html">SEASON</a>
+                    <ul class="subMenu">
+                        <li><a href="season.html">봄</a></li>
+                        <li><a href="season.html">여름</a></li>
+                        <li><a href="season.html">가을</a></li>
+                        <li><a href="season.html">겨울</a></li>
+                    </ul>
+                </li>
+                <li><a href="area.html">AREA</a>
+                    <ul class="subMenu">
+                        <li><a href="area.html">수도권</a></li>
+                        <li><a href="area.html">전라도</a></li>
+                        <li><a href="area.html">경상도</a></li>
+                        <li><a href="area.html">충청도</a></li>
+                        <li><a href="area.html">강원도</a></li>
+                        <li><a href="area.html">제주도</a></li>
+                    </ul>
+                </li>
+                <li><a href="">COMMUNITY</a>
+                    <ul class="subMenu">
+                        <li><a href="">후기 게시판</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">양도 / 동행</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="gnb">
+                <a href="login.html"><img src="../image/icon/login.png" alt="로그인" width="30px" class="login"></a>
+                <a href="Register.html"><img src="../image/icon/resister.png" alt="회원가입" width="30px"></a>
+            </div>
+            <!-- gnb end -->
+            <form action="post" name="search">
+                <label for="user-search">사이트 내 검색</label>
+                <input type="search" id="user-search">
+                <input type="image" src="../image/icon/search icon.png" width="30px">
+            </form>
+        </div>
+        <!-- header-inner end -->
+        <table>
+            <caption>인기 페스티벌 순위</caption>
+            <colgroup>
+                <col width="10%">
+                <col width="40%">
+                <col width="10%">
+                <col width="40%">
+            </colgroup>
+            <tbody class="Top10">
+                <tr class="top10Title">
+                    <th colspan="4">인기 페스티벌 순위</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">흠뻑쇼</a></td>
+                    <td>6</td>
+                    <td><a href="#">해운대 모래축제</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">피크 페스티벌</a></td>
+                    <td>7</td>
+                    <td><a href="#">서울 썸머 바이브</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#">인천 펜타포트 락 페스티벌</a></td>
+                    <td>8</td>
+                    <td><a href="#">대구 치맥 페스티벌</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#">워터밤</a></td>
+                    <td>9</td>
+                    <td><a href="#">부산 푸드필름 페스타</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#">보배 유채꽃 축제</a></td>
+                    <td>10</td>
+                    <td><a href="#">코리아 메모리얼 페스타</a></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <!-- header end -->
+    <div id="contents">
+        <div class="Top5">
+            <div class="poster">
+                <a href="#" class="poster1"><img src="../image/poster/mokryeon.jpg" alt="천리포수목원 목련축제"></a>
+                <a href="#" class="poster2"><img src="../image/poster/SandF.jpg" width="255px" alt="모래축제"></a>
+                <a href="#" class="poster3"><img src="../image/poster/WaterBomb.jpg" width="300px" alt="워터밤"></a>
+                <a href="#" class="poster4"><img src="../image/poster/worldDJ.jpg" width="255px" alt="월드 DJ 페스티벌"></a>
+                <a href="#" class="poster5"><img src="../image/poster/peakF.jpg" alt="피크페스티벌"></a>
+            </div>
+            <a href="#" class="previousPage"><img src="../image/icon/prepage.png"></a>
+            <a href="#" class="nextPage"><img src="../image/icon/nextpage.png"></a>
+        </div>
+        <!-- Top5 end -->
+        <div class="theme">
+            <div class="themeTitle">
+                <h1>어떤<br>페스티벌을<br>원해?</h1>
+                <input type="radio" name="themeTabs" id="first" checked="">
+                <input type="radio" name="themeTabs" id="second">
+                <input type="radio" name="themeTabs" id="last">
+                <div class="button">
+                    <label for="first">화려한 문화를 즐겨봐!</label>
+                    <label for="second">맛있는 음식을 먹으며</label>
+                    <label for="last">푸르른 자연과 함께</label>
+                </div>
+                <div class="tablist">
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/pentaport.jpg" alt="인천 펜타포트 락 페스티벌" width="300px"></a>
+                        <li>
+                            <h3><a href="#">인천 펜타포트 락 페스티벌</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">2025.08.01 ~ 08.03</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">송도 달빛축제 공원</li>
+                    </ul>
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/WaterBomb.jpg" alt="워터밤 서울" width="300px"></a>
+                        <li>
+                            <h3><a href="#">워터밤 서울</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">2025.07.04 ~ 07.06</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">킨텍스 야외 글로벌 스테이지</li>
+                    </ul>
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/SoundBerry.jpg" alt="사운드 베리 페스타" width="300px"></a>
+                        <li>
+                            <h3><a href="#">사운드 베리 페스타</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">2025.07.19 ~ 07.20</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">일산 킨텍스 제2전시장 9홀</li>
+                    </ul>
+                </div>
+                <div class="tablist">
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/duleuop.jpg" alt="두릅봄나물여행" width="300px"></a>
+                        <li>
+                            <h3><a href="#">두릅봄나물여행</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">205..4.26 ~ 04.27</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">가평군 설악면 초롱이둥지마을</li>
+                    </ul>
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/Strawberry.jpg" alt="논산 딸기축제" width="300px"></a>
+                        <li>
+                            <h3><a href="#">논산딸기축제</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">2025.03.27 ~ 2025.03.30</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">충청남도 논산시 시민가족공원</li>
+                    </ul>
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/TonginBeer.jpg" alt="통인시장 일맥상통 맥주축제" width="300px"></a>
+                        <li>
+                            <h3><a href="#">통인시장 일맥상통 맥주축제</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">2025.06.13</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">서울시 통인시장</li>
+                    </ul>
+                </div>
+                <div class="tablist">
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/SandF.jpg" alt="모래축제" width="300px"></a>
+                        <li>
+                            <h3><a href="#">2025 해운대 모래축제</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">2025.05.16 ~ 05.19</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">해운대해수욕장 구남로 일원</li>
+                    </ul>
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/goksungRose.jpg" alt="곡성 세계장미 축제" width="300px"></a>
+                        <li>
+                            <h3><a href="#">곡성세계장미축제</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">2025.05.16 ~ 05.25</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">
+                            곡성섬진강기차마을</li>
+                    </ul>
+                    <ul class="tablistImg">
+                        <a href="#"><img src="../image/poster/HubIsand.jpg" alt="허브아일랜드 라데봄 축제"
+                                width="300px"></a>
+                        <li>
+                            <h3><a href="#">허브아일랜드 라데봄 축제</a></h3>
+                        </li>
+                        <li><img src="../image/icon/pin1.png" width="18px">
+                            2025.05.01. (목) ~ 2025.06.30. (월)</li>
+                        <li><img src="../image/icon/pin1.png" width="18px">허브아일랜드</li>
+                    </ul>
+                </div>
+                <!-- tablist -->
+            </div>
+            <!-- themeTitle -->
+        </div>
+        <!-- thema end -->
+        <div class="season">
+            <h1>어떤 페스티벌을 가야하지?</h1>
+            <div class="seasonCon">
+                <input type="radio" name="seasonTabs" id="spring" checked="">
+                <input type="radio" name="seasonTabs" id="summer">
+                <input type="radio" name="seasonTabs" id="fall">
+                <input type="radio" name="seasonTabs" id="winter">
+                <div class="button">
+                    <label for="spring">산뜻한 봄</label>
+                    <label for="summer">푸르른 여름</label>
+                    <label for="fall">알록달록 가을</label>
+                    <label for="winter">새하얀겨울</label>
+                </div>
+                <div class="seasonTablist">
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/SandF.jpg" alt="해운대 모래축제" width="300px"></a>
+                        <p>#해운대 #부산여행추천</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/JejuFoodnWine.jpg" alt="제주푸드앤와인페스티벌" width="300px"></a>
+                        <p>#JFWF2025 #셰프와의만남</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/YeonCheon.jpg" alt="연천구석기축제" width="300px"></a>
+                        <p>#구석기체험 #체험축제추천</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/Strawberry.jpg" alt="논산딸기축제" width="300px"></a>
+                        <p>#딸기체험 #논산가볼만한곳</p>
+                    </div>
+                </div>
+                <div class="seasonTablist">
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/WaterBomb.jpg" alt="워터밤 서울" width="300px"></a>
+                        <p>#물총축제 #여름인생샷</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/SummerVive.png" alt="서울썸머바이브" width="300px"></a>
+                        <p>#여름액티비티 #도심속바캉스</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/Wayview.jpg" alt="웨이뷰 메밀꽃 축제" width="300px"></a>
+                        <p>#꽃과바다사이 #오션뷰축제</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/Pohang.jpg" alt="포항국제불빛축제" width="300px"></a>
+                        <p>#불꽃축제 #포항데이트코스</p>
+                    </div>
+                </div>
+                <div class="seasonTablist">
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/hanbok.jpg" alt="종로한복축제" width="300px"></a>
+                        <p>#한복축제 #전통문화체험</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/Hwadam.jpg" alt="화담숲 가을 단풍축제" width="300px"></a>
+                        <p>#단풍축제 #가을단풍명소</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/insam.jpg" alt="금산세계 인삼 축제" width="300px"></a>
+                        <p>#건강체험축제 #인삼캐기</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/Andong.jpg" alt="안동국제탈춤페스티벌" width="300px"></a>
+                        <p>#전통탈춤체험 #전통의멋</p>
+                    </div>
+                </div>
+                <div class="seasonTablist">
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/TaebeckWinter.jpg" alt="태백겨울축제" width="300px"></a>
+                        <p>#눈꽃인생샷 #별빛페스타</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/goguma.jpg" alt="영암 고구마 달빛축제" width="300px"></a>
+                        <p>#고구마맛집 #쥐불놀이체험</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/gunbam.jpg" alt="겨울공주 군밤축제" width="300px"></a>
+                        <p>#대형화로체험 #군밤먹방</p>
+                    </div>
+                    <div class="tablistImg">
+                        <a href="#"><img src="../image/poster/DaegwallyeongWinterFlower.jpg" alt="대관령눈꽃축제" width="300px"></a>
+                        <p>#눈꽃축제 #겨울인생샷</p>
+                    </div>
+                </div>
+            </div>
+            <!-- seasonCon end -->
+        </div>
+        <!-- season end -->
+        <a class="mainAd" href="#"><img src="../image/MainAdBanner.jpg"></a>
+        <div class="area">
+            <h1>우리지역에는 어떤 축제가 열릴까?</h1>
+            <div class="areaCon">
+                <input type="radio" name="areaTabs" id="seoul" checked="">
+                <input type="radio" name="areaTabs" id="gangwon">
+                <input type="radio" name="areaTabs" id="chungcheong">
+                <input type="radio" name="areaTabs" id="Gyeongsang">
+                <input type="radio" name="areaTabs" id="Jeolla">
+                <input type="radio" name="areaTabs" id="jeju">
+                <div class="map">
+                    <img src="../image/map.png">
+                    <div class="button">
+                        <label for="seoul"><img src="../image/icon/location.png" width="30px">수도권</label>
+                        <label for="gangwon"><img src="../image/icon/location.png" width="30px">강원도</label>
+                        <label for="chungcheong"><img src="../image/icon/location.png" width="30px">충청도</label>
+                        <label for="Gyeongsang"><img src="../image/icon/location.png" width="30px">경상도</label>
+                        <label for="Jeolla"><img src="../image/icon/location.png" width="30px">전라도</label>
+                        <label for="jeju"><img src="../image/icon/location.png" width="30px">제주도</label>
+                    </div>
+                </div>
+                <div class="areaTablist">
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/DDP Spring.jpg" alt="ddp 봄축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/SummerVive.png" alt="서울썸머바이브" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/acoustic.jpg" alt="남이섬 어쿠스틱 청춘페스티벌" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/YeonCheon.jpg" alt="연천구석기축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/hanbok.jpg" alt="종로한복축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/duleuop.jpg" alt="두릅봄나물여행" width="150px"></a>
+                    </div>
+                </div>
+                <div class="areaTablist">
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/coffee.jpg" alt="강릉커피축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/mime.jpg" alt="춘천마임축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Hwadam.jpg" alt="화담숲 가을 단풍축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/BeachBeer.jpg" alt="강릉비치비어페스티벌" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/TaebeckWinter.jpg" alt="태백겨울축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/DaegwallyeongWinterFlower.jpg" alt="대관령눈꽃축제" width="150px"></a>
+                    </div>
+                </div>
+                <div class="areaTablist">
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Asan.jpg" alt="아산외암마을야행" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/TaeAn.jpg" alt="태안봄꽃정원" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/JecheonMusic.jpg" alt="제천국제음악영화제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/PinnacleFirework.jpg" alt="피나클랜드 불꽃축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/mokryeon.jpg" alt="천리포수목원 목련축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/gunbam.jpg" alt="겨울공주 군밤축제" width="150px"></a>
+                    </div>
+                </div>
+                <div class="areaTablist">
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/BusanSentum.jpg" alt="부산센텀맥주축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/BusanHang.jpg" alt="부산항축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/BusanFoodFilm.jpg" alt="부산푸드필름페스타" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/DeaguChickenBeer.jpg" alt="대구치맥페스티벌" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Pohang.jpg" alt="포항국제불빛축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Andong.jpg" alt="안동국제탈춤페스티벌" width="150px"></a>
+                    </div>
+                </div>
+                <div class="areaTablist">
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/K Mega.jpg" alt="여수 k-메가 아일랜드 페스티벌"
+                                width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/gunsanBeer.jpg" alt="군산수제맥주페스티벌" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Bobe Island.jpg" alt="보배섬 유채꽃 축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Damyang.jpg" alt="담양 대나무축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/goksungRose.jpg" alt="곡성세계장미축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/goguma.jpg" alt="영암 고구마 달빛축제" width="150px"></a>
+                    </div>
+                </div>
+                <div class="areaTablist">
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/TraditionalSpringFlower.jpg" alt="옛 전통 봄꽃으로 물들다" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/SummerFlower.jpg" alt="여름꽃&능소화축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/981GravityQuest.jpg" alt="9.81파크 그래비티 퀘스트 제주"
+                                width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Wayview.jpg" alt="웨이뷰 메밀꽃 축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/Hueaeri.jpg" alt="휴애리 봄 수국축제" width="150px"></a>
+                    </div>
+                    <div class="tablistImg">
+                        <img src="../image/icon/pin2.png" width="64px">
+                        <a href="#"><img src="../image/poster/981 puppy.jpg" alt="구팔일 댕댕이 대잔치!" width="150px"></a>
+                    </div>
+                </div>
+                <!-- areaTablist end -->
+            </div>
+            <!-- areaCon end -->
+        </div>
+        <!-- area end -->
+        <div class="community">
+            <h1>너의 후기를 들려줘</h1>
+            <ul class="communityNav">
+                <li><a href="#">후기게시판</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">양도 / 동행</a></li>
+            </ul>
+            <div class="post">
+                    <table class="reviewLeft">
+                        <colgroup>
+                            <col width="5%">
+                            <col width="*">
+                            <col width="10%">
+                        </colgroup>
+                        <tbody class="review">
+                            <tr>
+                                <td>1</td>
+                                <td><a href="#">세상에 능소화 이케 이쁠 일임..?</a></td>
+                                <td>2025.06.23</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="#">종로 한복축제 국뽕 오진다...</a></td>
+                                <td>2025.06.21</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="#">겨울 명품축제 반열 오른 서울빛초롱축제</a></td>
+                                <td>2025.06.20</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="#">천리포수목원힐링 포인트</a></td>
+                                <td>2025.06.20</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="#">2024 월디페 라인업 개쩐다</a></td>
+                                <td>2025.06.18</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><a href="#">피크페스티벌 제대로 즐기고 옴</a></td>
+                                <td>2025.06.14</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><a href="#">남이섬에서 한 어쿠스틱 생각보다 재밌네ㅋㅋㅋ</a></td>
+                                <td>2025.06.14</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><a href="#">ddp 봄축제 후기</a></td>
+                                <td>2025.06.11</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><a href="#">대관령눈꽃축제 포토스팟 알려드림</a></td>
+                                <td>2025.06.11</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><a href="#">화담숲 부모님 모시고 가기 좋음!!</a></td>
+                                <td>2025.06.11</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="reviewRight">
+                        <colgroup>
+                            <col width="5%">
+                            <col width="*%">
+                            <col width="10%">
+                        </colgroup>
+                        <tbody class="review">
+                            <tr>
+                                <td>11</td>
+                                <td><a href="#">피나클랜드 불꽃축제 진짜 너무 예쁘다ㅠㅠ</a></td>
+                                <td>2025.06.18</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><a href="#">워터밤 뭐입고 가지</a></td>
+                                <td>2025.06.20</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><a href="#">워터밤 드디어 담주임!!!</a></td>
+                                <td>2025.06.23</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><a href="#">센텀맥주축제 기대했는데 왜이럼;;;</a></td>
+                                <td>2025.06.22</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><a href="#">작년 워터밤 설 푼다 개꿀잼보장</a></td>
+                                <td>2025.06.21</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><a href="#">따끈따끈한 부산항축제 후기임</a></td>
+                                <td>2025.06.21</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td><a href="#">좀 늦은 보배섬 유채꽃 축제 후기 푼다</a></td>
+                                <td>2025.06.18</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td><a href="#">담양 대나무 축제 다녀옴 청량미 가득!!!</a></td>
+                                <td>2025.06.18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td><a href="#">구일팔 댕댕이 대잔치 쵝오!!! 댕댕이 쵝오!!!1</a></td>
+                                <td>2025.06.11</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td><a href="#">(제주 수국밭추천)휴애리 긴짜 완전 추천임</a></td>
+                                <td>2025.05.18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+
+
+
+            </tbody>
+            </table>
+        </div>
+        <!-- community end -->
+    </div>
+    <!-- contents end -->
+    <div id="footer1"></div>
+    <div id="footer2">
+        <img src="../image/icon/festawave.png" alt="footer로고" class="footerLogo">
+        <div class="slogan">
+            <p>festa wave</p>
+            <p>페스티벌을 사랑하는 사람들의 모임</p>
+        </div>
+        <div class="info">
+            <p>주소 서울특별시 관악구 신림로</p>
+            <p>사업자 등록번호 ㅣ 046802-04-233530</p>
+            <p>호스팅서비스제공자 ㅣ 대표이사 문슬기, 정수진, 김혜영</p>
+        </div>
+    </div>
+    <div id="footer3"></div>
+    <!-- footer end -->
+</body>
+
+</html>

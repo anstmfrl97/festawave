@@ -1,0 +1,300 @@
+/* fonts style */
+@font-face {
+    font-family: 'MarinBold';
+    src: url(../TTF/MarinBold.ttf);
+}
+
+@font-face {
+    font-family: 'MarinRegular';
+    src: url(../TTF/MarinRegular.ttf);
+}
+
+
+h1 {
+    font-size: 32px;
+    font-family: 'MarinBold';
+}
+
+/*  로고사이즈, 컨텐츠 제목 */
+
+h2 {
+    font-size: 24px;
+    font-family: 'MarinBold';
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'MarinBold';
+}
+
+p, a {
+    font-family: 'MarinRegular';
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* basic style */
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/* layout style */
+#wrap {
+    background: #0b0b0b;
+}
+
+#header,
+.nav,
+#contents,
+.communityNav,
+.community>.post,
+#footer1,
+#footer2,
+#footer3 {
+    overflow: hidden;
+}
+
+#contents {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#footer1 {
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid #eeeeee;
+}
+
+#footer2 {
+    width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 80px;
+}
+
+#footer3 {
+    background: url(../image/footer-line.png) repeat-x 0 0;
+    height: 84px;
+}
+
+.footerLogo {
+    float: left;
+}
+
+.slogan {
+    float: left;
+    margin-left: 170px;
+}
+
+.info {
+    float: right;
+}
+
+
+
+
+/* header style */
+#header {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.logo {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+}
+
+
+
+
+/* 네비게이션 스타일 */
+.nav {
+    width: 655px;
+    height: 50px;
+    margin: 95px auto;
+}
+
+.nav>li {
+    float: left;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav>li>a {
+    display: block;
+    padding: 0 40px;
+    font-family: 'MarinBold';
+    line-height: 20px;
+}
+
+.nav>li:hover>a {
+    color: #e73e2b;
+}
+
+/* 서브메뉴 스타일 */
+.nav .subMenu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 412px;
+    padding: 0 10px;
+}
+
+/* 서브메뉴 항목 */
+.nav .subMenu>li {
+    float: left;
+}
+
+.nav .subMenu>li>a {
+    font-family: 'MarinBold';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav>li:hover .subMenu {
+    display: block;
+}
+
+.nav>li:nth-child(3):hover .subMenu,
+.nav>li:last-child:hover .subMenu {
+    left: -120px !important;
+}
+
+
+/* gnb style */
+.gnb {
+    position: absolute;
+    top: 95px;
+    right: 80px;
+}
+
+.gnb>a>.login {
+    padding-right: 40px;
+}
+
+
+
+
+
+
+/* search style */
+#header form {
+    background: url(../image/icon/search\ line.png) no-repeat 0 0;
+    margin: 0 auto;
+    width: 730px;
+    height: 60px;
+    position: relative;
+}
+
+#header label {
+    display: none;
+}
+
+#header input[type=search] {
+    width: 600px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 50px;
+    margin-top: 17px;
+    color: #eeeeee;
+
+}
+
+#header input[type=image] {
+    background: url(../image/icon/search\ icon.png);
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+/* login style */
+
+#contents {
+    width: 1400px;
+    margin: 200px auto;
+}
+
+legend,
+label{display: none;}
+fieldset{border-style:none;}
+
+#contents form {
+    width: 500px;
+    margin: 0 auto; 
+}
+
+input[type='text'],
+input[type='password']
+{
+    display:block;
+    width: 500px;
+    height: 65px;
+    margin: 40px auto;
+    border-radius:50px 50px 50px 50px;
+    background:black;
+    border:1px solid #fff;
+    text-indent: 30px;
+}
+
+input[type='submit']{
+    display:block;
+    width: 500px;
+    height: 75px;
+    margin: 40px auto;
+    border-radius:50px 50px 50px 50px;
+    background:#e7388c;
+    border:1px solid #e7388c;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='submit']
+ {
+    font-size: 24px;
+    font-family: 'MarinBold';
+}
+
+.social{
+    margin: 130px auto 40px auto;
+    width: 500px;
+    text-indent: 15px;
+    
+}
+
+.social li a{
+    margin:0 25px 0 25px;
+    float: left;
+}
+
+.reset{
+    text-align: center;
+    clear: both;
+    padding-top: 40px;
+}
+
+.reset a {
+    color: #e83b3b;
+}
+
+/* banner style */
+.banner{
+    width: 1400px;
+    margin:0 auto 120px auto;
+}
+

@@ -1,0 +1,334 @@
+/* fonts style */
+@font-face {
+    font-family: 'MarinBold';
+    src: url(../TTF/MarinBold.ttf);
+}
+
+@font-face {
+    font-family: 'MarinRegular';
+    src: url(../TTF/MarinRegular.ttf);
+}
+
+
+h1 {
+    font-size: 32px;
+    font-family: 'MarinBold';
+}
+
+/*  로고사이즈, 컨텐츠 제목 */
+
+h2 {
+    font-size: 24px;
+    font-family: 'MarinBold';
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'MarinBold';
+}
+
+p, a {
+    font-family: 'MarinRegular';
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* basic style */
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/* layout style */
+#wrap {
+    background: #0b0b0b;
+}
+
+#header,
+.nav,
+#contents,
+.communityNav,
+.community>.post,
+#footer1,
+#footer2,
+#footer3 {
+    overflow: hidden;
+}
+
+
+#contents {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#footer1 {
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid #eeeeee;
+}
+
+#footer2 {
+    width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 80px;
+}
+
+#footer3 {
+    background: url(../image/footer-line.png) repeat-x 0 0;
+    height: 84px;
+}
+
+
+
+
+
+/* header style */
+#header {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.logo {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+}
+
+
+
+
+/* 네비게이션 스타일 */
+.nav {
+    width: 655px;
+    height: 50px;
+    margin: 95px auto;
+}
+
+.nav>li {
+    float: left;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav>li>a {
+    display: block;
+    padding: 0 40px;
+    font-family: 'MarinBold';
+    line-height: 20px;
+}
+
+.nav>li:hover>a {
+    color: #e73e2b;
+}
+
+/* 서브메뉴 스타일 */
+.nav .subMenu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 412px;
+    padding: 0 10px;
+}
+
+/* 서브메뉴 항목 */
+.nav .subMenu>li {
+    float: left;
+}
+
+.nav .subMenu>li>a {
+    font-family: 'MarinBold';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav>li:hover .subMenu {
+    display: block;
+}
+
+.nav>li:nth-child(3):hover .subMenu,
+.nav>li:last-child:hover .subMenu {
+    left: -120px !important;
+}
+
+
+/* gnb style */
+.gnb {
+    position: absolute;
+    top: 95px;
+    right: 80px;
+}
+
+.gnb>.login {
+    padding-right: 40px;
+}
+
+.footerLogo {
+    float: left;
+}
+
+.slogan {
+    float: left;
+    margin-left: 170px;
+}
+
+.info {
+    float: right;
+}
+
+
+
+
+/* search style */
+#header form {
+    background: url(../image/icon/search\ line.png) no-repeat 0 0;
+    margin: 0 auto;
+    width: 730px;
+    height: 60px;
+    position: relative;
+}
+
+#header label {
+    display: none;
+}
+
+#header input[type=search] {
+    width: 600px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 50px;
+    margin-top: 17px;
+    color: #eeeeee;
+
+}
+
+#header input[type=image] {
+    background: url(../image/icon/search\ icon.png);
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+/* 컨텐츠 start*/
+#contents{
+    width: 1400px;
+    margin:0 auto;
+}
+#location {
+    width: 1170px;
+    height: 35px;
+    border-bottom: 1px solid #eeeeee;
+    margin: 80px 70px 20px 160px;
+}
+
+#location >h3 {
+    display: inline-block;
+    margin-right: 860px;
+}
+#location>ul{float:right;}
+#location>ul>li{float:left;}
+#location>ul>li>a{font-family: 'MarinBold';}
+
+/* 회원정보 style */
+.register{
+    width:1170px;
+    margin: 80px 70px 450px 160px;
+}
+fieldset{
+    border-radius: 30px 30px 30px 30px;
+    border:1px solid #eeeeee;
+}
+.userInfo{
+    margin-bottom: 80px;
+    padding: 25px 0 25px 70px;
+}
+.agreement{
+    margin-bottom: 45px;
+    padding: 0 0 25px 70px;
+}
+legend{
+    font-family: 'MarinBold';
+    font-size: 32px; 
+    color: #f70094;
+} 
+.formsection{padding: 25px 0 25px 25px;}
+.formsection > li{
+    padding: 25px 0 25px 0;
+}
+.formsection > label,
+.formsection > li > label > a{
+    font-family: 'MarinRegular';
+    font-size: 24px;
+    color: #eeeeee;
+}
+.must{
+    text-indent: 25px;
+    color:#ff0000;
+    font-family: 'MarinRegular' ;
+    font-size: 18px; 
+}
+input[type='checkbox']{ 
+    width: 18px; 
+    height: 18px;
+}
+
+input[type='submit']{
+    width:250px;
+    border-radius: 10px 10px 10px 10px;
+    background: #f70094;
+    color: #ffffff;
+    height: 75px;
+    font-size: 24px;
+    font-family: 'MarinRegular';
+    margin:0 auto;
+    display: block;
+}
+
+.userInfo>.formsection>label:first-child{
+            width: 210px;
+            display:inline-block; 
+        } 
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel']{
+    width: 680px;
+    height: 55px;
+    background: transparent;
+    border: 1px solid #eeeeee;
+    border-radius: 50px;
+}
+span{color:red;}
+.idcheck{
+    position:relative;
+    display:inline-block;
+}
+.userInfo button{
+    border-radius: 50px 50px 50px 50px;
+    color: #ffffff;
+    width: 140px;
+    line-height: 50px;
+    border:1px solid  #717171;
+    background-color: #717171;
+    font-size: 20px;
+    font-family: 'MarinRegular';
+    float: right;
+    position:absolute;
+    right: 2px;
+    margin:2px 1px 0 0;
+}

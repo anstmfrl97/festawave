@@ -1,0 +1,650 @@
+/* fonts style */
+@font-face {
+    font-family: 'MarinBold';
+    src: url(../TTF/MarinBold.ttf);
+}
+
+@font-face {
+    font-family: 'MarinRegular';
+    src: url(../TTF/MarinRegular.ttf);
+}
+
+
+h1 {
+    font-size: 32px;
+    font-family: 'MarinBold';
+}
+
+/*  로고사이즈, 컨텐츠 제목 */
+
+h2 {
+    font-size: 24px;
+    font-family: 'MarinBold';
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'MarinBold';
+}
+
+p, a {
+    font-family: 'MarinRegular';
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* basic style */
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/* layout style */
+#wrap {
+    background: #0b0b0b;
+}
+
+#headerBack,
+#header,
+.nav,
+#contents,
+.communityNav,
+.community>.post,
+#footer1,
+#footer2,
+#footer3 {
+    overflow: hidden;
+}
+
+#headerBack {
+    height: 835px;
+    background: url(../image/MainBannerGif.gif) no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+#contents {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#footer1 {
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid #eeeeee;
+}
+
+#footer2 {
+    width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 80px;
+}
+
+#footer3 {
+    background: url(../image/footer-line.png) repeat-x 0 0;
+    height: 84px;
+}
+
+
+
+
+
+/* header style */
+#header {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.logo {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+}
+
+
+
+
+/* 네비게이션 스타일 */
+.nav {
+    width: 655px;
+    height: 50px;
+    margin: 95px auto;
+}
+
+.nav>li {
+    float: left;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav>li>a {
+    display: block;
+    padding: 0 40px;
+    font-family: 'MarinBold';
+    line-height: 20px;
+}
+
+.nav>li:hover>a {
+    color: #e73e2b;
+}
+
+/* 서브메뉴 스타일 */
+.nav .subMenu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 412px;
+    padding: 0 10px;
+}
+
+/* 서브메뉴 항목 */
+.nav .subMenu>li {
+    float: left;
+}
+
+.nav .subMenu>li>a {
+    font-family: 'MarinBold';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav>li:hover .subMenu {
+    display: block;
+}
+
+.nav>li:nth-child(3):hover .subMenu,
+.nav>li:last-child:hover .subMenu {
+    left: -120px !important;
+}
+
+
+/* gnb style */
+.gnb {
+    position: absolute;
+    top: 95px;
+    right: 80px;
+}
+
+.gnb>a>.login {
+    padding-right: 40px;
+}
+
+
+
+
+
+
+/* search style */
+#header form {
+    background: url(../image/icon/search\ line.png) no-repeat 0 0;
+    margin: 0 auto;
+    width: 730px;
+    height: 60px;
+    position: relative;
+}
+
+#header label {
+    display: none;
+}
+
+#header input[type=search] {
+    width: 600px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 50px;
+    margin-top: 17px;
+    color: #eeeeee;
+
+}
+
+#header input[type=image] {
+    background: url(../image/icon/search\ icon.png);
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+
+
+
+/* 인기순위 style */
+#headerBack table {
+    width: 910px;
+    height: 387px;
+    border: 1px solid #eeeeee;
+    padding: 10px 50px;
+    margin: 80px auto 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+caption {
+    display: none;
+}
+
+.top10Title>th {
+    font-family: 'MarinBold';
+    border-bottom: 1px solid #eeeeee;
+    font-size: 20px;
+    text-align: left;
+}
+
+#headerBack .Top10>tr>td{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'MarinBold';
+
+}
+#headerBack .Top10 td>a{
+    font-family: 'MarinBold';
+}
+
+#headerBack .Top10 td:nth-child(2),
+#headerBack .Top10 td:nth-child(4) {
+    text-align: left;
+}
+
+
+
+/* contents style */
+.season>h1,
+.area>h1,
+.community>h1 {
+    background: url(../image/icon/title-line.png) no-repeat 0 0;
+    width: 595px;
+    height: 80px;
+    line-height: 80px;
+    text-indent: 40px;
+}
+
+.theme,
+.season,
+.mainAd,
+.area,
+.community {
+    margin: 140px 0;
+    overflow: hidden;
+}
+
+/* Top5 style */
+.Top5 {
+    position: relative;
+}
+
+.Top5 .poster {
+    width: 1393px;
+    margin: 35px auto;
+}
+
+.Top5 .poster img {
+    padding: 0 12px;
+}
+
+.Top5 .poster1,
+.Top5 .poster5 {
+    opacity: 0.7;
+}
+
+.Top5 .poster2,
+.Top5 .poster4 {
+    opacity: 0.8;
+}
+
+.Top5>.poster>.poster3 {
+    opacity: 1;
+}
+
+.Top5>.previousPage {
+    position: absolute;
+    top: 245px;
+    left: 0px;
+}
+
+.Top5>.nextPage {
+    position: absolute;
+    top: 245px;
+    right: 0px;
+}
+
+/* theme style */
+.themeTitle {
+    width: 450px;
+    height: 635px;
+    background: #e73e2b;
+    padding: 100px 0 0px 60px;
+    position: relative;
+}
+
+.themeTitle>h1 {
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.themeTitle input,
+.seasonCon input,
+.areaCon input {
+    display: none;
+}
+
+/* radio 버튼이 사라짐 */
+.themeTitle input#first~div.tablist:nth-of-type(2) {display: none;}
+.themeTitle input#second~div.tablist:nth-of-type(3) {display: none;}
+.themeTitle input#last~div.tablist:nth-of-type(4) {display: none;}
+.themeTitle input#first:checked~div.tablist:nth-of-type(2) {display: block;}
+.themeTitle input#second:checked~div.tablist:nth-of-type(3) {display: block;}
+.themeTitle input#last:checked~div.tablist:nth-of-type(4) {display: block;}
+
+/* input을 쓸때는 first-child가 아닌 first-of-type를 씀
+input은 클래스를 지정을 해도 전체로 먹힘 */
+
+.themeTitle .button>label {
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    background: #eeeeee;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px;
+    margin: 30px 0;
+    font-size: 18px;
+    font-family: 'MarinBold';
+    color: #0b0b0b;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.themeTitle input#first:checked~.button>label[for=first],
+.themeTitle input#second:checked~.button>label[for=second],
+.themeTitle input#last:checked~.button>label[for=last] {
+    opacity: 0.7;
+}
+
+.themeTitle .tablist {
+    width: 1125px;
+    position: absolute;
+    top: 123px;
+    left: 275px;
+}
+
+.themeTitle .tablist>ul.tablistImg {
+    float: left;
+    margin-left: 75px;
+}
+
+.themeTitle .tablist>ul.tablistImg>a>img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.tablist>ul.tablistImg>li {
+    font-family: 'MarinRegular';
+    margin: 10px 0;
+
+}
+
+/* season style */
+.seasonCon {
+    position: relative;
+}
+
+.seasonCon input#spring~div.seasonTablist:nth-of-type(2) {display: none;}
+.seasonCon input#summer~div.seasonTablist:nth-of-type(3) {display: none;}
+.seasonCon input#fall~div.seasonTablist:nth-of-type(4) {display: none;}
+.seasonCon input#winter~div.seasonTablist:nth-of-type(5) {display: none;}
+.seasonCon input#spring:checked~div.seasonTablist:nth-of-type(2) {display: block;}
+.seasonCon input#summer:checked~div.seasonTablist:nth-of-type(3) {display: block;}
+.seasonCon input#fall:checked~div.seasonTablist:nth-of-type(4) {display: block;}
+.seasonCon input#winter:checked~div.seasonTablist:nth-of-type(5) {display: block;}
+
+.seasonCon input#spring:checked~.button>label[for=spring],
+.seasonCon input#summer:checked~.button>label[for=summer],
+.seasonCon input#fall:checked~.button>label[for=fall],
+.seasonCon input#winter:checked~.button>label[for=winter] {
+    color: #e73e2b;
+    border-bottom: 1px solid #e73e2b;
+}
+
+.seasonCon .button {
+    position: absolute;
+    top: -45px;
+    right: -30px;
+    float: right;
+}
+
+.seasonCon .button>label {
+    margin: 0 30px;
+    font-family: 'MarinBold';
+}
+
+.seasonTablist>.tablistImg {
+    float: left;
+    margin: 55px 0 0 66px;
+}
+
+.seasonTablist>.tablistImg:first-child {
+    margin-left: 0;
+}
+
+.seasonTablist>.tablistImg>p {
+    width: 253px;
+    height: 30px;
+    line-height: 30px;
+    background: #e73e2b;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/* area style */
+.areaCon {
+    position: relative;
+}
+
+.areaCon input#seoul~div.areaTablist:nth-of-type(2),
+.areaCon input#gangwon~div.areaTablist:nth-of-type(3),
+.areaCon input#chungcheong~div.areaTablist:nth-of-type(4),
+.areaCon input#Gyeongsang~div.areaTablist:nth-of-type(5),
+.areaCon input#Jeolla~div.areaTablist:nth-of-type(6),
+.areaCon input#jeju~div.areaTablist:nth-of-type(7) {
+    display: none;
+}
+
+.areaCon input#seoul:checked~div.areaTablist:nth-of-type(2), 
+.areaCon input#gangwon:checked~div.areaTablist:nth-of-type(3), 
+.areaCon input#chungcheong:checked~div.areaTablist:nth-of-type(4), 
+.areaCon input#Gyeongsang:checked~div.areaTablist:nth-of-type(5), 
+.areaCon input#Jeolla:checked~div.areaTablist:nth-of-type(6),
+.areaCon input#jeju:checked~div.areaTablist:nth-of-type(7) {
+    display: block;
+}
+
+.areaCon input#seoul:checked~.map>.button>label[for=seoul], 
+.areaCon input#gangwon:checked~.map>.button>label[for=gangwon], 
+.areaCon input#chungcheong:checked~.map>.button>label[for=chungcheong], 
+.areaCon input#Gyeongsang:checked~.map>.button>label[for=Gyeongsang], 
+.areaCon input#Jeolla:checked~.map>.button>label[for=Jeolla], 
+.areaCon input#jeju:checked~.map>.button>label[for=jeju] {
+    font-size: 22px;
+}
+
+.areaCon input#seoul:checked~.map>.button>label[for=seoul]>img, 
+.areaCon input#gangwon:checked~.map>.button>label[for=gangwon]>img, 
+.areaCon input#chungcheong:checked~.map>.button>label[for=chungcheong]>img, 
+.areaCon input#Gyeongsang:checked~.map>.button>label[for=Gyeongsang]>img, 
+.areaCon input#Jeolla:checked~.map>.button>label[for=Jeolla]>img, 
+.areaCon input#jeju:checked~.map>.button>label[for=jeju]>img {
+    width: 40px;
+}
+
+.areaCon .button {
+    width: 50px;
+    font-size: 18px;
+    font-family: 'MarinBold';
+}
+
+.areaCon .map {
+    float: left;
+    margin-top: 60px;
+}
+
+.areaCon .button img {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.areaCon .map .button label[for=seoul] {
+    position: absolute;
+    top: 195px;
+    left: 180px;
+}
+
+.areaCon .map .button label[for=gangwon] {
+    position: absolute;
+    top: 175px;
+    left: 325px;
+}
+
+.areaCon .map .button label[for=chungcheong] {
+    position: absolute;
+    top: 360px;
+    left: 185px;
+}
+
+.areaCon .map .button label[for=Gyeongsang] {
+    position: absolute;
+    top: 450px;
+    left: 350px;
+}
+
+.areaCon .map .button label[for=Jeolla] {
+    position: absolute;
+    top: 550px;
+    left: 140px;
+}
+
+.areaCon .map .button label[for=jeju] {
+    position: absolute;
+    top: 600px;
+    left: 523px;
+}
+
+.areaCon .areaTablist {
+    margin-top: 60px;
+    width: 700px;
+    float: right;
+}
+
+.areaCon .areaTablist .tablistImg {
+    position: relative;
+    float: left;
+    background: #ffffff;
+    margin: 0 0 45px 35px;
+    padding: 15px 15px 0;
+    width: 165px;
+    height: 287px;
+}
+
+.areaCon .areaTablist .tablistImg>a>img {
+    padding: 5px;
+    border: 1px solid #0b0b0b;
+
+}
+
+.areaCon .areaTablist .tablistImg>img {
+    position: absolute;
+    top: -25px;
+    left: 50px;
+}
+
+/* community style */
+
+.community>.communityNav{
+    margin: 50px 0 30px;
+}
+
+.community>.communityNav>li{
+    float: left;
+    border:1px solid #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 85px;
+}
+.community>.communityNav>li>a{
+    font-size: 24px;
+    font-family: 'MarinBold';
+}
+
+.community>.communityNav>li:hover{
+    background: #ffffff;
+    color: #0b0b0b;
+}
+
+.community>.communityNav>li:hover>a{color: #0b0b0b;}
+
+.community>.post{
+    width: 1400px;
+    text-align: center;
+    padding: 0 80px;
+}
+
+.community .reviewLeft{
+    float: left;
+}
+.community .reviewRight{
+    float: left;
+}
+
+.community .reviewLeft,
+.community .reviewRight{
+    width: 615px;
+    border-collapse: collapse;
+    margin: 0 10px;
+
+}
+
+.community tr{
+    height: 50px;
+    line-height: 50px;
+}
+
+.community tr>td{
+    font-family: 'MarinRegular';
+    font-size: 18px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 5px;
+}
+
+/* footer style */
+.footerLogo {
+    float: left;
+}
+
+.slogan {
+    float: left;
+    margin-left: 170px;
+}
+
+.info {
+    float: right;
+}
